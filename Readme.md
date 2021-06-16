@@ -21,3 +21,8 @@ I have not used server side rendering here due to some technical issues.
 
 To improve functionality of my app to users I have used lighthouse reports(provided by Chrome Dev Tools)
 <h3>Here are the screenshots</h3>
+<img src="Screenshots/1st image.jpeg">
+<img src="Screenshots/2nd image.jpeg">
+<img src="Screenshots/3rd image.jpeg">
+<img src="Screenshots/4th image.jpeg">
+<img src="Screenshots/5th image.jpeg">
