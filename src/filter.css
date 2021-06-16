@@ -1,0 +1,178 @@
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+p{
+font-weight:bold;
+font-size:19px;
+}
+body{
+background-color:#D3D3D3;
+}
+h3{
+color:#4B0082;
+text-align:center;  
+border-bottom:1px solid #4B0082;  
+margin:0 1rem;
+padding-bottom:2px ;
+margin-bottom:1rem;
+}
+.button_container button 
+{
+color:#4B0082;
+background-color:lightgreen;
+font-size:16px;  
+width:6rem;
+height:3rem;
+border-radius:7px ;
+ font-weight:bold ;
+border:0;
+outline:0;
+}
+.button_container
+{
+margin-top:-21rem ;    
+}
+.launch_head
+{
+margin-top:-23.5rem;
+position: absolute;
+margin-left:4rem;
+}
+.button_container button:hover,.succLaunch button:hover,.successRender button:hover{
+background-color:limegreen ;    
+cursor: pointer;
+}
+.button_container
+{
+display:grid;
+grid-template-columns: auto auto;   
+grid-gap:1rem 3rem; 
+}
+.filter
+{
+background-color:white;
+width:20%;
+}
+.succLaunch
+{
+display:flex;
+gap:3rem;
+margin-bottom:1rem;
+}
+.succLaunch button,.successRender button
+{
+color:#4B0082;
+background-color:lightgreen;
+font-size:16px;  
+width:6rem;
+height:3rem;
+font-weight:bold ;
+border-radius:7px ;
+border:0;
+outline:0;    
+}
+.successRender
+{
+display:flex;
+gap:3rem; 
+}
+@media only screen and (max-width:700px)
+{
+    h1{
+     font-size:39px; 
+     float:left;
+      background-color:#D3D3D3;
+    }
+    body{
+    background-color:#D3D3D3;
+    }
+    .filter 
+    {
+     width:100%;   
+    }
+    .head{
+    font-size:37px;
+    margin-left:-15rem;
+    }
+    .launch_head{
+    font-size:35px;
+    margin-top:-39rem;
+    text-align:center;
+    }
+    .button_container
+    {
+    grid-gap:1rem;  
+    margin:-34rem 0 0 1rem;  
+    }
+    .button_container button{
+       width:9.6rem;
+       height:3rem;
+       font-size:30px;
+        font-weight:bold ;
+    }
+  .launch_head2{
+    font-size:35px ;
+  }
+  .succLaunch button,.successRender button
+  {
+    width:9.6rem;
+    height:3rem;
+    font-size:30px;  
+     font-weight:bold ;
+  }
+  .succLaunch,.successRender
+  {
+  gap:2.3rem;    
+  margin-left:1rem;
+  }
+}
+@media only screen and (min-width:700px) and (max-width:1024px)
+{
+    h1{
+     font-size:55px; 
+    }
+    .filter 
+    {
+     width:100%;   
+    }
+    .head{
+    font-size:50px;
+    margin-left:-18.5rem;
+    }
+    .launch_head{
+    font-size:49px;
+    margin-top:-45.5rem;  
+    margin-left:12.6rem;
+    }
+    .button_container
+    {
+    grid-gap:1rem;  
+    margin:-40rem 0 0 2rem;  
+    }
+    .button_container button{
+       width:15rem;
+       height:4rem;
+       font-size:45px;
+       font-weight:bold ;
+    }
+  .launch_head2{
+     font-size:35px;
+  }
+    .succLaunch , .successRender{
+        display:flex;
+        gap:9.4rem;
+    }
+  .succLaunch button,.successRender button
+  {
+      width:15rem;
+       height:4rem;
+       font-size:45px;
+       font-weight:bold ;
+  }
+  .succLaunch,.successRender
+  {
+  margin-left:2rem;
+  }
+}

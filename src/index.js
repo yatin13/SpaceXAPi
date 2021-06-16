@@ -1,17 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+import React,{lazy,Suspense} from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from './App'
+const Buttonhtml = lazy(() => import("./Buttonhtml"));
+const apiDataHandler=(data)=>{
+const enterData={
+        ...data
+    };
+    const {buttonValue,launchValue,landValue}=enterData;
+    localStorage.setItem("btn",buttonValue);
+    localStorage.setItem("launch",launchValue);
+    localStorage.setItem("land",landValue);
+}
+ReactDOM.render(<><Suspense fallback={<></>}><Buttonhtml saveApiData={apiDataHandler}/></Suspense><App btnVal={localStorage.getItem("btn")} launchVal={localStorage.getItem("launch")} landVal={localStorage.getItem("land")}/></>, document.getElementById("root"));
