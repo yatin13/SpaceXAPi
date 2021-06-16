@@ -20,4 +20,4 @@ I have not used server side rendering here due to some technical issues.
 ---
 
 To improve functionality of my app to users I have used lighthouse reports(provided by Chrome Dev Tools)
-These are the improved reports that I am pasting here:
+<h3>Here are the screenshots</h3>
